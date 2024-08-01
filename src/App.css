@@ -1,0 +1,122 @@
+/* Ensure the entire website has a black background */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the content vertically and horizontally */
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Styling for the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Styling for the heading */
+.heading {
+  font-weight: bolder;
+  color: white;
+  margin: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Styling for the card container */
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+/* Styling for the cards */
+.card {
+  height: 400px;  /* Increased height */
+  width: 300px;   /* Increased width */
+  background: #1e90ff;  /* Change to a more subtle color */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Ensure content aligns vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the rows */
+.row1, .row2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.row1 {
+  margin-bottom: 30px; /* Adjust margin */
+}
+
+/* Styling for the card content */
+.card-content {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;  /* Increased font size */
+  font-style: italic;
+  margin: 0;
+}
+
+/* Styling for the save button */
+.save-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.save-button:hover {
+  background-color: #ff6347; /* Tomato color */
+  color: white;
+}
+
+/* Styling for the saved cards container */
+.savedCardsContainer {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.saved-card {
+  background: #333;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 500px;
+}

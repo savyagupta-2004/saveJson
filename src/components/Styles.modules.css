@@ -1,0 +1,14 @@
+.container {
+    background-color: black;
+    display: flex;
+    justify-content: center;  /* Center the content horizontally */
+    align-items: center;      /* Center the content vertically */
+    height: 100vh;            /* Full viewport height */
+  }
+  
+  .heading {
+    text-align: center;
+    color: white;  /* Make the text white to contrast with the black background */
+    margin-bottom: 20px;  /* Add some space below the heading */
+  }
+  
